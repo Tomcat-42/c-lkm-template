@@ -4,4 +4,4 @@
 KDIR ?= ../linux
 
 default:
-	$(MAKE) LLVM=1 CLIPPY=1 -j$(nproc) -C $(KDIR) M=$$PWD
+	$(MAKE) LLVM=1 -j$(nproc) -C $(KDIR) M=$$PWD
