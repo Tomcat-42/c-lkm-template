@@ -16,5 +16,7 @@ requires() {
 	done
 }
 
+requires entr ag
+
 # Should run again if any *.c, *.h file changes, Makefile changes, Kbuild changes or any file inside ./scripts changes
 ag -l | entr -n -r bash -c "./scripts/build && ./scripts/run && ./scripts/build -t clean"
